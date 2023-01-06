@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Roboto+Slab&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style2.css">
+    <title>Digitális könyvtár</title>
+
+<style>
+
+#harmadik{
+            width: 80px;
+            height: 50px;
+            background-color:  rgb(27, 28, 31);
+            animation-name: animacio;
+            animation-duration: 5s;  /*lejatszani ido*/
+            position: relative;   /*ha mozgatni akarjuk*/
+            border-radius: 1rem;  /*keret, kerekites*/
+            animation-delay: 2s;  /*késleltetés*/
+            animation-iteration-count: infinite;  /*végtelenlejatszas (vagy hanyszor fusson le)*/
+            animation-timing-function: ease;  /*lassan indul majd begyorsul*/
+}
+@keyframes animacio{
+            0%{background-color: rgb(27, 28, 31); left: 0px; top:0px}   /*kezdopont*/
+            45%{background-color: rgb(5, 33, 56); left: 230px; top:0px}  /*balrol betolja és a szin megvaltozik*/
+            75%{background-color: rgb(8, 116, 143); right: 230px; top:0px}  /*jobbrol visszatolja*/
+            100%{background-color: rgb(12, 62, 71); left: 0px; top:0px}  /*kezdopontra all*/
+        }
+</style>
+
+
+
+</head>
+<body>
+    
+<div class="row ">
+    <div class="col">
+        <div class="doboz">
+            <div class="form">
+                <br><br><br>
+                <h1>Válaszd ki az évfolyamod</h1><br>
+                <h6>Az évfolyamod kiválasztásával megtalálod az adott év kötelező olvasmányait</h6>
+                
+                
+                <br>
+                <img src="2.2.jpg" alt="kép" width="77%">
+
+
+            </div>
+       
+
+        </div>
+    </div>
+    <div class="col nyil">
+        <div id="harmadik"><h1><b>---></b></h1></div>
+    </div>
+    <div class="col">
+        
+        <div class="kartya">
+
+            <h5><br><br><br> <a href="9.html"> 9. osztály</a></h5>
+        </div>
+        <div class="kartya">
+            <h5><br><br><br> <a href="10.html"> 10. osztály</a></h5>
+        </div>
+        <div class="kartya">
+            <h5><br><br><br> <a href="11.html"> 11. osztály</a> </h5>
+        </div>
+        <div class="kartya">
+            <h5><br><br><br> <a href="12.html"> 12. osztály</a></h5>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+</body>
+</html>

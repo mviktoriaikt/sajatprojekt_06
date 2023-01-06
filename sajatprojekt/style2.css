@@ -1,0 +1,114 @@
+body{
+    margin: 0 auto;
+    padding: 0 auto;
+    font-family: 'Cinzel', serif;
+    font-family: 'Roboto Slab', serif;
+    color: rgb(200, 213, 224);
+    background-image: url(2.jpg);
+    box-sizing: border-box;
+    display: flex;
+    margin: 180px 130px;
+    align-items: center;
+    
+}
+
+.doboz{
+    position: relative;  /*ha mozgatni akarjuk*/
+    width: 580px;
+    height: 420px;
+    background-color: rgb(46, 45, 45);
+    border-radius: 10px;  /*keret, kerekites*/
+    overflow: hidden ;  /*A túlcsordulás le van vágva, tartalom többi része láthatatlan lesz, így a kék doboz nem lesz szelesebb/magasabb*/
+    margin-left: 3rem;
+    margin-top: 50px;
+}
+
+.doboz::before{   
+    content: '';  
+    position: absolute;
+    top: -50%;
+    left: -50%;     /*balrol és fentrol behuzza*/
+    width: 560px;   /*ugyan az a méret*/
+    height: 420px;
+    background: linear-gradient(0deg,transparent,#45f3ff,#45f3ff);
+    transform-origin: bottom right; /*transzformáció eredete: jobb alsó sarok*/
+    animation: animate 6s linear infinite;   /*animacio neve, ideje,hanyszor fusson le, */
+}
+
+.doboz::after{  /*az elso utan elindul egy masik doboz 3mp utan*/
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;     /*méret, hely ugyan az marad, szin*/
+    width: 560px;   
+    height: 420px;
+    background: linear-gradient(0deg,transparent,#45f3ff,#45f3ff);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;  /*animacio neve, ideje,hanyszor fusson le, */
+    animation-delay: -3s ;  /*késleltetés*/
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }                               /*animacio: hogy a doboz forogjon 360 fokot*/
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.form{
+    position: absolute;    
+    inset: 5px; /*ez az doboz és a masik doboz kozti tavolsag*/
+    border-radius: 8px;
+    background: #19191a;
+    z-index:  10;  /*ez a doboz a kék dobozok elé kerul, így lesz olyan mintha a keret korbe menne*/
+    color: #45f3ff;  /*betuszin*/
+    text-align: center;
+
+}
+
+h6{
+    color: lightslategray;
+}
+
+
+.nyil{
+    text-align: center;
+    margin: 253px -150px;
+}
+
+
+.kartya{
+    width: 185px;
+    height: 230px;
+    border-radius: 1rem;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    cursor: pointer; /*megadja az egérkurzort, amely akkor jelenik meg, amikor egy elemre mutat*/
+    margin: 20px 30px;
+    background-image: url(kartyas.jpg);
+    background-position: center;
+    background-size: cover;
+    display: inline-block; /*nem ad sortörést az elem után, így az elem más elemek mellé kerülhet*/
+    text-align: center;
+    border: 3px solid white;
+    color:#b1d3d6 ;
+    transition: transform 0.5s;  /*lehetove teszi hogy megvaltozzon a tulajdonsaga*/
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.kartya:hover{
+    transform: translateY(-10px);   /*ha ramegyunk: elmozdítja az elemet Y-tengelyre megadott paraméterek szerint*/
+    border: 3px solid rgb(75, 201, 206);
+}
+
+a:hover{
+    color: #45f3ff;
+}
+
+

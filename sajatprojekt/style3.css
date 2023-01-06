@@ -1,0 +1,54 @@
+
+body{
+    margin: 0 ;
+    padding: 0 ;
+    font-family: 'Cinzel', serif;
+    font-family: 'Roboto Slab', serif;
+    color: rgb(200, 213, 224);
+    background-image: url(2.jpg);
+    box-sizing: border-box;
+
+}
+
+
+.kartya2{
+    margin-left: 250px;
+    width: 1300px;
+    height: 900px;
+    border-radius: 2rem;
+    box-sizing: border-box;  /*lehetővé teszi, hogy belefoglaljuk a kitöltést és a szegélyt az elem teljes szélességébe és magasságába*/
+    background-image: url(osztalyhatter.jpg);
+    background-position: center;
+    background-size: cover; /*háttérképek mérete*/
+    display: inline-block;  /*nem ad sortörést az elem után, így az elem más elemek mellé kerülhet*/
+    border: 7px solid rgb(221, 215, 215);
+    color:#b1d3d6 ;
+}
+
+h1{
+    color:aliceblue;
+    text-align: center;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.felsorolas{
+    padding-top: 45px;
+}
+
+p{
+    font-size: 30px;
+    padding-top: 30px;
+    margin-left: 100px;
+}
+
+a{
+    text-decoration: none;
+    color: darkslategrey;
+}
+
+a:hover{
+    text-decoration:underline;
+    color: darkred;
+}
+

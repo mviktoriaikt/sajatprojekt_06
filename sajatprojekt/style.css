@@ -1,0 +1,61 @@
+body{
+    box-sizing: border-box;
+    color: aliceblue;
+    margin: 5.7rem;
+    background-image: url(1.2.jpg);
+    
+}
+
+.mm{
+    padding-top: 3rem;
+    background-color: black;
+    margin-top: 3rem;
+
+}
+
+
+.hatter{
+    background-image: url(1.jpg);
+    color: aliceblue;
+    padding: 200px 230px;
+    margin-left: 370px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 3rem solid black;
+    
+}
+
+ 
+
+ 
+.hatter2{
+    background-image: url(1.1.jpg);
+    padding: 180px 290px;
+    color: aliceblue;
+    height: 380px;
+    text-align: center;
+    margin-left: 130px;
+    text-align: center;
+    border-radius: 7rem;
+    border: 2px solid white;
+    margin-top: 7rem;
+    display: flex;
+
+}
+
+h1{
+    font-family: 'Cinzel', serif;
+    font-size: 3rem;
+    color: honeydew;
+}
+
+
+button,input{
+    background-color: lightgrey;
+}
+
+p{
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+}

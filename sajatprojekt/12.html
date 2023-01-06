@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Roboto+Slab&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style3.css">
+    <title>Digitális könyvtár</title>
+
+    <style>
+
+        #osztaly{
+                    margin: 30px 790px;
+                    width: 240px;
+                    height: 70px;
+                    background-color:  rgb(27, 28, 31);
+                    animation-name: oszt;
+                    animation-duration: 5s;  /*lejatszani ido*/
+                    border-radius: 1rem;  /*keret*/
+                    animation-iteration-count: infinite;  /*végtelenlejatszas vagy hanyszor fusson le*/
+        }
+        @keyframes oszt{
+                    0%{background-color: rgb(27, 28, 31); left: 0px; top:0px}   /*kezdopont*/
+                    45%{background-color: rgb(4, 63, 112); left: 0px; top:0px}  /*balrol betolja és a szin megvaltozik*/
+                    75%{background-color: rgb(31, 149, 179); right: 0px; top:0px}  /*jobbrol visszatolja*/
+                    100%{background-color: rgb(5, 27, 31); left: 0px; top:0px}  /*kezdopontra all*/
+                }
+        </style>
+
+
+
+</head>
+<body>
+
+
+<div class="col-12"> <h1 id="osztaly">12.osztály</h1></div>
+
+
+<div class="col-12">
+    <div class="kartya2">
+
+        <div class="felsorolas">
+            <p><a href="halalvelenceben.html"> Thomas Mann: Halál Velencében</a></p>
+            <p><a href="tobbi.html"> Albert Camus: Sziszüphosz mítosza</a></p>
+            <p><a href="tobbi.html">Dürrenmatt: A fizikusok</a></p>
+            <p><a href="tobbi.html">Déry Tibor: Szerelem</a></p>
+            <p><a href="tobbi.html">Németh László: Iszony</a></p>
+            <p><a href="tobbi.html">Illyés Gyula: Puszták népe</a></p>
+            <p><a href="tobbi.html">Brecht: Kurázsi mama</a></p>
+            <p><a href="tobbi.html">Ottlik Géza: Iskola a határon</a></p>
+            <p><a href="tobbi.html">Franz Kafka: Átváltozás</a></p>
+        </div>
+
+
+    </div>
+</div>
+
+
+</body>
+</html>
